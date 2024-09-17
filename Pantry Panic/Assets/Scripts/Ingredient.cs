@@ -39,7 +39,7 @@ public class Ingredient : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        sandwhichPoint = GameObject.FindGameObjectWithTag("Sandwhich").transform.position;
     }
 
     // Update is called once per frame

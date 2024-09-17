@@ -32,6 +32,9 @@ public class Ingredient : MonoBehaviour
         { 'Y', KeyCode.Y },
         { 'Z', KeyCode.Z } };
 
+    public char assigned;
+    public Vector3 sandwhichPoint;
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +45,9 @@ public class Ingredient : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(keyCodes[assigned]))
+        {
+            transform.position = sandwhichPoint;
+        }
     }
 }

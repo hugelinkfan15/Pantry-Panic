@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Sandwhich
+  - Bread
+  - Meat
+  - Cheese
+  - Topping
   layers:
   - Default
   - TransparentFX

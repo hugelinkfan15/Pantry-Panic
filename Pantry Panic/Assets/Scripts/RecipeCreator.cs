@@ -6,8 +6,10 @@ using Random = UnityEngine.Random;
 
 public class RecipeCreator : MonoBehaviour
 {
+    /// <summary>
+    /// FIRST INGREDIENT MUST BE BREAD!!!
+    /// </summary>
     public List<Ingredient> validIngreds;
-    public float waitTime;
 
     private Dictionary<string,int> ingredientRank = new Dictionary<string, int>
     {
@@ -16,29 +18,38 @@ public class RecipeCreator : MonoBehaviour
         {"Cheese",3 },
         {"Topping", 4 }
     };
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    List<Ingredient> makeRecipe()
+    /// <summary>
+    /// Using validIngreds List which is set in the Unity Editor, creates a "recipe"
+    /// for a sandwhich. First element in your validIngreds should be your Bread object
+    /// </summary>
+    /// <returns>A List of Ingredient objects representing the recipe</returns>
+   public List<Ingredient> makeRecipe()
     {
         List<Ingredient> recipe = new List<Ingredient>{ validIngreds[0] };
-        int numIngred = Random.Range(1, validIngreds.Count-2);
-
+        int numIngred = Random.Range(2, 9);
+        for(int i = 0;i<numIngred;i++)
+        {
+            recipe.Add(validIngreds[(int)Random.Range(1,5)]);
+        }
+        recipe.Add(validIngreds[0]);
+        //Uncomment to Test loop
+        //printRecipe(ref recipe);
         return recipe;
 
     }
 
+    //IN PROGRESS!!!
     List<Ingredient> sortRecipe(ref List<Ingredient> recipe)
     {
         return recipe;
+    }
+
+    void printRecipe(ref List<Ingredient> recipe)
+    {
+        for(int i = 0;i<recipe.Count;i++)
+        {
+            Debug.Log(recipe[i]);
+        }
     }
 }

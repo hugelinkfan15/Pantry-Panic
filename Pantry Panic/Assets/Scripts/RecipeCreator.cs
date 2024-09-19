@@ -34,7 +34,7 @@ public class RecipeCreator : MonoBehaviour
         }
         recipe.Add(validIngreds[0]);
         //Uncomment to Test loop
-        //printRecipe(ref recipe);
+        printRecipe(ref recipe);
         return recipe;
 
     }
@@ -45,7 +45,7 @@ public class RecipeCreator : MonoBehaviour
         return recipe;
     }
 
-    void printRecipe(ref List<Ingredient> recipe)
+   public void printRecipe(ref List<Ingredient> recipe)
     {
         for(int i = 0;i<recipe.Count;i++)
         {

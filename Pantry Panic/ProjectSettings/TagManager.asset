@@ -9,6 +9,8 @@ TagManager:
   - Meat
   - Cheese
   - Topping
+  - Recipe Controller
+  - Recipe
   layers:
   - Default
   - TransparentFX

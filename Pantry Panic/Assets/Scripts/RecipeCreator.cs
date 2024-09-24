@@ -40,10 +40,10 @@ public class RecipeCreator : MonoBehaviour
     }
 
     //IN PROGRESS!!!
-    List<Ingredient> sortRecipe(ref List<Ingredient> recipe)
+    /*List<Ingredient> sortRecipe(ref List<Ingredient> recipe)
     {
         return recipe;
-    }
+    }*/
 
    public void printRecipe(ref List<Ingredient> recipe)
     {

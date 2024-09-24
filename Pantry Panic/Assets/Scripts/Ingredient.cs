@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO.MemoryMappedFiles;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Ingredient : MonoBehaviour
 {
     static private Dictionary<char, KeyCode> keyCodes = new Dictionary<char, KeyCode>  {
@@ -35,12 +35,15 @@ public class Ingredient : MonoBehaviour
 
     public char assigned;
     public Vector3 sandwhichPoint;
+    public RawImage correct;
+    public RecipeHolder holder;
 
 
     // Start is called before the first frame update
     void Start()
     {
         sandwhichPoint = GameObject.FindGameObjectWithTag("Sandwhich").transform.position;
+        holder =  GameObject.FindGameObjectWithTag("Recipe").GetComponent<RecipeHolder>();
     }
 
     // Update is called once per frame
@@ -48,19 +51,8 @@ public class Ingredient : MonoBehaviour
     {
         if (Input.GetKeyDown(keyCodes[assigned]))
         {
+            correct.gameObject.SetActive(true);
             transform.position = sandwhichPoint;
-        }
-    }
-
-    public bool correctKey(KeyCode keyCode)
-    {
-        if (keyCode == keyCodes[assigned])
-        {
-            return true;
-        }
-        else
-        {
-            return false;
         }
     }
 }

@@ -15,6 +15,7 @@ public class RecipeHolder : MonoBehaviour
     void Start()
     {
         rC = GameObject.FindGameObjectWithTag("Recipe").GetComponent<RecipeCreator>();
+        orders = new List<List<Ingredient>>();
         StartCoroutine(makeOrder());
     }
 
@@ -26,14 +27,12 @@ public class RecipeHolder : MonoBehaviour
 
     IEnumerator makeOrder()
     {
-        yield return new WaitForSeconds(3.0f);
-
-        while(gameStart /*&& recipeDone*/ && !gameOver)
+        while(!gameOver)
         {
             orders.Add(rC.makeRecipe());
             //recipeDone = false;
 
-            yield return new WaitForSeconds(3.0f);
+            yield return new WaitForSeconds(8.0f);
         }
     }
 }

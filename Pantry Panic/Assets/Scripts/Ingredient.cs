@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO.MemoryMappedFiles;
@@ -53,7 +54,8 @@ public class Ingredient : MonoBehaviour
         {
             correct.gameObject.SetActive(true);
             transform.position = sandwhichPoint;
-            sandwhichPoint.y += gameObject.transform.localScale.y;
+            sandwhichPoint.y += 0.2f;
+            Debug.Log(sandwhichPoint.ToString());
         }
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO.MemoryMappedFiles;
 using UnityEngine;
 
 public class Ingredient : MonoBehaviour
@@ -48,6 +49,18 @@ public class Ingredient : MonoBehaviour
         if (Input.GetKeyDown(keyCodes[assigned]))
         {
             transform.position = sandwhichPoint;
+        }
+    }
+
+    public bool correctKey(KeyCode keyCode)
+    {
+        if (keyCode == keyCodes[assigned])
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

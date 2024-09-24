@@ -34,7 +34,7 @@ public class Ingredient : MonoBehaviour
         { 'Z', KeyCode.Z } };
 
     public char assigned;
-    public Vector3 sandwhichPoint;
+    public static Vector3 sandwhichPoint;
     public RawImage correct;
     public RecipeHolder holder;
 
@@ -53,6 +53,7 @@ public class Ingredient : MonoBehaviour
         {
             correct.gameObject.SetActive(true);
             transform.position = sandwhichPoint;
+            sandwhichPoint.y += gameObject.transform.localScale.y;
         }
     }
 }

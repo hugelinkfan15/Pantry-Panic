@@ -36,10 +36,10 @@ public class Ingredient : MonoBehaviour
 
     public char assigned;
     public static Vector3 sandwhichPoint;
-    public RawImage correct;
     public RecipeHolder holder;
     public Texture2D uiPic;
     public RawImage recipeSlot;
+    public GameObject unboundFood;
 
 
     // Start is called before the first frame update
@@ -54,9 +54,7 @@ public class Ingredient : MonoBehaviour
     {
         if (Input.GetKeyDown(keyCodes[assigned]))
         {
-            correct.gameObject.SetActive(true);
-            transform.position = sandwhichPoint;
-            Debug.Log(sandwhichPoint.ToString());
+            Instantiate(unboundFood,sandwhichPoint, unboundFood.transform.rotation);
         }
     }
 }

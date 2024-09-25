@@ -131,7 +131,7 @@ MonoBehaviour:
   holder: {fileID: 0}
   uiPic: {fileID: 2800000, guid: 0925b6e278a76d946839fa4333472ad3, type: 3}
   recipeSlot: {fileID: 0}
-  unboundFood: {fileID: 0}
+  unboundFood: {fileID: 8349084545457276359, guid: 0c5ef1f14f1db91469e7a1cde4a68903, type: 3}
 --- !u!1001 &1570856115654515068
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assigned: 72
-  correct: {fileID: 0}
   holder: {fileID: 0}
   uiPic: {fileID: 2800000, guid: dd2471d2c20642749a3a961b5bbb9f66, type: 3}
   recipeSlot: {fileID: 0}
+  unboundFood: {fileID: 7110076129223455336, guid: d83330f1b6c17b846adda21036e593ea, type: 3}

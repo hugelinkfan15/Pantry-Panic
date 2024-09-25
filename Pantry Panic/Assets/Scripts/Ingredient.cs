@@ -38,8 +38,8 @@ public class Ingredient : MonoBehaviour
     public static Vector3 sandwhichPoint;
     public RecipeHolder holder;
     public Texture2D uiPic;
-    public RawImage recipeSlot;
     public GameObject unboundFood;
+    public GameObject sandwhich;
 
 
     // Start is called before the first frame update
@@ -49,12 +49,22 @@ public class Ingredient : MonoBehaviour
         holder =  GameObject.FindGameObjectWithTag("Recipe").GetComponent<RecipeHolder>();
     }
 
+    public  KeyCode getKeyCode()
+    {
+        return keyCodes[assigned];
+    }
+
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if (Input.GetKeyDown(keyCodes[assigned]))
         {
             Instantiate(unboundFood,sandwhichPoint, unboundFood.transform.rotation);
         }
+    }*/
+
+    public void makeIngredient()
+    {
+        Instantiate(unboundFood, sandwhichPoint, unboundFood.transform.rotation).transform.parent = sandwhich.transform;
     }
 }

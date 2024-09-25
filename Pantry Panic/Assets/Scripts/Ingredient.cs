@@ -38,6 +38,8 @@ public class Ingredient : MonoBehaviour
     public static Vector3 sandwhichPoint;
     public RawImage correct;
     public RecipeHolder holder;
+    public Texture2D uiPic;
+    public RawImage recipeSlot;
 
 
     // Start is called before the first frame update
@@ -54,7 +56,6 @@ public class Ingredient : MonoBehaviour
         {
             correct.gameObject.SetActive(true);
             transform.position = sandwhichPoint;
-            sandwhichPoint.y += 0.2f;
             Debug.Log(sandwhichPoint.ToString());
         }
     }

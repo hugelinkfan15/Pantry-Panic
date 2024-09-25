@@ -16,23 +16,16 @@ public class RecipeHolder : MonoBehaviour
     {
         rC = GameObject.FindGameObjectWithTag("Recipe").GetComponent<RecipeCreator>();
         orders = new List<List<Ingredient>>();
-        StartCoroutine(makeOrder());
+        recipeDone = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    IEnumerator makeOrder()
-    {
-        while(!gameOver)
+        if(recipeDone)
         {
+            recipeDone=false;
             orders.Add(rC.makeRecipe());
-            //recipeDone = false;
-
-            yield return new WaitForSeconds(8.0f);
         }
     }
 }

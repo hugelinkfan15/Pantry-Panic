@@ -67,7 +67,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6266090246242494809, guid: f327a4a8eaa12f34bb4b970c88a6dda2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7477549481904185078, guid: f327a4a8eaa12f34bb4b970c88a6dda2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f327a4a8eaa12f34bb4b970c88a6dda2, type: 3}
 --- !u!1001 &2575840763669962288
 PrefabInstance:
@@ -214,7 +219,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6266090246242494809, guid: f327a4a8eaa12f34bb4b970c88a6dda2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7477549481904185078, guid: f327a4a8eaa12f34bb4b970c88a6dda2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f327a4a8eaa12f34bb4b970c88a6dda2, type: 3}
 --- !u!1001 &6302150877826105626
 PrefabInstance:
@@ -283,7 +293,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6266090246242494809, guid: f327a4a8eaa12f34bb4b970c88a6dda2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7477549481904185078, guid: f327a4a8eaa12f34bb4b970c88a6dda2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f327a4a8eaa12f34bb4b970c88a6dda2, type: 3}
 --- !u!1001 &7100921600385018329
 PrefabInstance:
@@ -352,7 +367,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6266090246242494809, guid: f327a4a8eaa12f34bb4b970c88a6dda2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7477549481904185078, guid: f327a4a8eaa12f34bb4b970c88a6dda2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f327a4a8eaa12f34bb4b970c88a6dda2, type: 3}
 --- !u!1001 &9147623027839183600
 PrefabInstance:
@@ -361,6 +381,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2609133376975256027}
     m_Modifications:
+    - target: {fileID: 4557965802611675845, guid: 1c4530962e459754cb2a82a11c021a65, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8466122138664052579, guid: 1c4530962e459754cb2a82a11c021a65, type: 3}
       propertyPath: m_Name
       value: Cheese Keybound
@@ -421,5 +445,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1040663551293842794, guid: 1c4530962e459754cb2a82a11c021a65, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1c4530962e459754cb2a82a11c021a65, type: 3}

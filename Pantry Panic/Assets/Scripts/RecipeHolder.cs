@@ -12,10 +12,11 @@ public class RecipeHolder : MonoBehaviour
     public bool gameOver;
     public bool recipeDone;
     public Texture2D correct;
+    public GameObject fSandwhich;
 
     private int ingredientNum;
     private List<Ingredient> currentSandwhich;
-    private List<GameObject> makingSandwhich;
+    private List<GameObject> finishedSandwhich;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class RecipeHolder : MonoBehaviour
         orders = new List<List<Ingredient>>();
         recipeDone = true;
         currentSandwhich = new List<Ingredient>();
+        finishedSandwhich = new List<GameObject>();
     }
 
     // Update is called once per frame
@@ -44,8 +46,21 @@ public class RecipeHolder : MonoBehaviour
         }
         if(ingredientNum == currentSandwhich.Count)
         {
-            recipeDone = true;
-            orders.Clear();
+            StartCoroutine(nextSandwhich());
         }
+    }
+
+    IEnumerator nextSandwhich()
+    {
+        yield return new WaitForSeconds(1.0f);
+
+        recipeDone = true;
+            for (int i = fSandwhich.transform.childCount - 1; i >= 0; i--)
+        {
+            Debug.Log("Error here!");
+            Destroy(fSandwhich.transform.GetChild(i).gameObject);
+        }
+
+        orders.Clear();
     }
 }

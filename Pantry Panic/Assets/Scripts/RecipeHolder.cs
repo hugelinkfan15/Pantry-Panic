@@ -42,6 +42,7 @@ public class RecipeHolder : MonoBehaviour
         if (Input.GetKeyDown(currentSandwhich[ingredientNum].getKeyCode()))
         {
             currentSandwhich[ingredientNum].makeIngredient();
+            rC.gotIngredient(ingredientNum, correct);
             ingredientNum++;
         }
         if(ingredientNum == currentSandwhich.Count)
@@ -54,13 +55,12 @@ public class RecipeHolder : MonoBehaviour
     {
         yield return new WaitForSeconds(1.0f);
 
-        recipeDone = true;
             for (int i = fSandwhich.transform.childCount - 1; i >= 0; i--)
         {
-            Debug.Log("Error here!");
             Destroy(fSandwhich.transform.GetChild(i).gameObject);
         }
 
         orders.Clear();
+        recipeDone = true;
     }
 }

@@ -59,6 +59,11 @@ public class RecipeCreator : MonoBehaviour
         }
     }
 
+    public void gotIngredient(int i, Texture2D pic)
+    {
+        recipeSlots[i].texture = pic;
+    }
+
     //IN PROGRESS!!!
     /*List<Ingredient> sortRecipe(ref List<Ingredient> recipe)
     {

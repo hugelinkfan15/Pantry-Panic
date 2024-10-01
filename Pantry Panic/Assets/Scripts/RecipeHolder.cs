@@ -46,7 +46,6 @@ public class RecipeHolder : MonoBehaviour
             rC.updateUI(currentSandwhich);
             ingredientNum = 0;
         }
-        Debug.Log("Error here");
         if (Input.GetKeyDown(currentSandwhich[ingredientNum].getKeyCode()))
         {
             currentSandwhich[ingredientNum].makeIngredient();
@@ -65,23 +64,17 @@ public class RecipeHolder : MonoBehaviour
 
 
     /// <summary>
-    /// After a set pause, will delete the current children of fSandwhich, and will allow another recipe to be make in Update()
+    /// After a set pause, will delete the current children of fSandwhich, and will allow another recipe to be made in Update()
     /// </summary>
     /// <returns></returns>
     IEnumerator NextSandwhich()
     {
         yield return new WaitForSeconds(0.8f);
 
-        List<GameObject> noMore=  new List<GameObject>();
 
-        for (int i = 0; i < fSandwhich.transform.childCount; i++)
+        for (int i = fSandwhich.transform.childCount-1; i>=0 ; i--)
         {
-            noMore.Add(fSandwhich.transform.GetChild(i).gameObject);
-        }
-
-        for (int i = noMore.Count - 1; i >= 0; i--)
-        {
-            Destroy(noMore[i]);
+            Destroy(fSandwhich.transform.GetChild(i).gameObject);
         }
 
         orders.Clear();

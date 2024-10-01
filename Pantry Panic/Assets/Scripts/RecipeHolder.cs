@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -57,24 +58,23 @@ public class RecipeHolder : MonoBehaviour
         }
         if(ingredientNum == currentSandwhich.Count)
         {
-            StartCoroutine(nextSandwhich());
+            StartCoroutine(NextSandwhich());
         }
     }
 
-    IEnumerator nextSandwhich()
+
+    /// <summary>
+    /// After a set pause, will delete the current children of fSandwhich, and will allow another recipe to be made in Update()
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator NextSandwhich()
     {
         yield return new WaitForSeconds(0.8f);
 
-        List<GameObject> noMore=  new List<GameObject>();
 
-        for (int i = 0; i < fSandwhich.transform.childCount; i++)
+        for (int i = fSandwhich.transform.childCount-1; i>=0 ; i--)
         {
-            noMore.Add(fSandwhich.transform.GetChild(i).gameObject);
-        }
-
-        for (int i = noMore.Count - 1; i >= 0; i--)
-        {
-            Destroy(noMore[i]);
+            Destroy(fSandwhich.transform.GetChild(i).gameObject);
         }
 
         orders.Clear();

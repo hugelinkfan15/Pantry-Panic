@@ -54,15 +54,6 @@ public class Ingredient : MonoBehaviour
         return keyCodes[assigned];
     }
 
-    // Update is called once per frame
-    /*void Update()
-    {
-        if (Input.GetKeyDown(keyCodes[assigned]))
-        {
-            Instantiate(unboundFood,sandwhichPoint, unboundFood.transform.rotation);
-        }
-    }*/
-
     public void makeIngredient()
     {
         Instantiate(unboundFood, sandwhichPoint, unboundFood.transform.rotation).transform.parent = sandwhich.transform;

@@ -7,12 +7,18 @@ public class RecipeHolder : MonoBehaviour
 {
     public RecipeCreator rC;
     public List< List<Ingredient>> orders;
+    
     public int maxOrders;
+    
     public bool gameStart;
     public bool gameOver;
     public bool recipeDone;
+
     public Texture2D correct;
+    
     public GameObject fSandwhich;
+
+    public RawImage wrong;
 
     private int ingredientNum;
     private List<Ingredient> currentSandwhich;
@@ -45,6 +51,10 @@ public class RecipeHolder : MonoBehaviour
             rC.gotIngredient(ingredientNum, correct);
             ingredientNum++;
         }
+        else if(Input.anyKeyDown)
+        {
+            wrong.gameObject.SetActive(true);
+        }
         if(ingredientNum == currentSandwhich.Count)
         {
             StartCoroutine(nextSandwhich());
@@ -53,11 +63,18 @@ public class RecipeHolder : MonoBehaviour
 
     IEnumerator nextSandwhich()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.8f);
 
-            for (int i = fSandwhich.transform.childCount - 1; i >= 0; i--)
+        List<GameObject> noMore=  new List<GameObject>();
+
+        for (int i = 0; i < fSandwhich.transform.childCount; i++)
         {
-            Destroy(fSandwhich.transform.GetChild(i).gameObject);
+            noMore.Add(fSandwhich.transform.GetChild(i).gameObject);
+        }
+
+        for (int i = noMore.Count - 1; i >= 0; i--)
+        {
+            Destroy(noMore[i]);
         }
 
         orders.Clear();

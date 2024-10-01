@@ -5,6 +5,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
+/// <summary>
+/// Used to Create a List of Ingredients with helper functions to display UI images
+/// </summary>
 public class RecipeCreator : MonoBehaviour
 {
     /// <summary>
@@ -47,6 +50,11 @@ public class RecipeCreator : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Using a given List of RawImages, resets all the textures in the RawImages, and the sets the a number of the Raw Images
+    /// depending on how many Ingredients are in the given List
+    /// </summary>
+    /// <param name="recipe"></param>
     public void updateUI(List<Ingredient> recipe)
     {
         foreach (var pic in recipeSlots)
@@ -59,6 +67,12 @@ public class RecipeCreator : MonoBehaviour
         }
     }
 
+
+    /// <summary>
+    /// Set a specific RawImage to a given texture
+    /// </summary>
+    /// <param name="i"> spot in the List </param>
+    /// <param name="pic">Texture to change the RawImage to</param>
     public void gotIngredient(int i, Texture2D pic)
     {
         recipeSlots[i].texture = pic;

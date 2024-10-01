@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -45,6 +46,7 @@ public class RecipeHolder : MonoBehaviour
             rC.updateUI(currentSandwhich);
             ingredientNum = 0;
         }
+        Debug.Log("Error here");
         if (Input.GetKeyDown(currentSandwhich[ingredientNum].getKeyCode()))
         {
             currentSandwhich[ingredientNum].makeIngredient();
@@ -57,11 +59,16 @@ public class RecipeHolder : MonoBehaviour
         }
         if(ingredientNum == currentSandwhich.Count)
         {
-            StartCoroutine(nextSandwhich());
+            StartCoroutine(NextSandwhich());
         }
     }
 
-    IEnumerator nextSandwhich()
+
+    /// <summary>
+    /// After a set pause, will delete the current children of fSandwhich, and will allow another recipe to be make in Update()
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator NextSandwhich()
     {
         yield return new WaitForSeconds(0.8f);
 

@@ -21,6 +21,11 @@ public class RecipeHolder : MonoBehaviour
 
     public RawImage wrong;
 
+    //public SoundFXManager sFX;
+
+    public AudioClip correctSFX;
+    public AudioClip wrongSFX;
+
     private int ingredientNum;
     private List<Ingredient> currentSandwhich;
     private List<GameObject> finishedSandwhich;
@@ -49,12 +54,14 @@ public class RecipeHolder : MonoBehaviour
         if (Input.GetKeyDown(currentSandwhich[ingredientNum].getKeyCode()))
         {
             currentSandwhich[ingredientNum].makeIngredient();
+            //SoundFXManager.instance.PlaySoundFXCLip(correctSFX, gameObject.transform, 1.0f);
             rC.gotIngredient(ingredientNum, correct);
             ingredientNum++;
         }
         else if(Input.anyKeyDown)
         {
             wrong.gameObject.SetActive(true);
+            SoundFXManager.instance.PlaySoundFXCLip(wrongSFX, gameObject.transform, 1.0f);
         }
         if(ingredientNum == currentSandwhich.Count)
         {

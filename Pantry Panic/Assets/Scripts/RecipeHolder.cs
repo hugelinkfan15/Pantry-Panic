@@ -53,14 +53,14 @@ public class RecipeHolder : MonoBehaviour
             rC.updateUI(currentSandwhich);
             ingredientNum = 0;
         }
-        if (Input.GetKeyDown(currentSandwhich[ingredientNum].getKeyCode()) && (cdTimer > cooldown))
+        if (Input.GetKeyDown(currentSandwhich[ingredientNum].getKeyCode()) && (cdTimer > cooldown) && !PauseMenu.isPaused)
         {
             currentSandwhich[ingredientNum].makeIngredient();
             SoundFXManager.instance.PlaySoundFXCLip(correctSFX, gameObject.transform, 1.0f);
             rC.gotIngredient(ingredientNum, correct);
             ingredientNum++;
         }
-        else if((Input.anyKeyDown && !Input.GetKeyDown(KeyCode.P)) && (cdTimer>cooldown))
+        else if((Input.anyKeyDown && !Input.GetKeyDown(KeyCode.P)) && (cdTimer>cooldown) && !PauseMenu.isPaused)
         {
             
             cdTimer = 0.0f;

@@ -21,14 +21,15 @@ public class RecipeHolder : MonoBehaviour
 
     public RawImage wrong;
 
-    //public SoundFXManager sFX;
-
     public AudioClip correctSFX;
     public AudioClip wrongSFX;
 
     private int ingredientNum;
     private List<Ingredient> currentSandwhich;
     private List<GameObject> finishedSandwhich;
+
+    public float cooldown;
+    private float cdTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,7 @@ public class RecipeHolder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        cdTimer += Time.deltaTime;
         if(recipeDone)
         {
             recipeDone=false;
@@ -51,16 +53,19 @@ public class RecipeHolder : MonoBehaviour
             rC.updateUI(currentSandwhich);
             ingredientNum = 0;
         }
-        if (Input.GetKeyDown(currentSandwhich[ingredientNum].getKeyCode()))
+        if (Input.GetKeyDown(currentSandwhich[ingredientNum].getKeyCode()) && (cdTimer > cooldown))
         {
             currentSandwhich[ingredientNum].makeIngredient();
             //SoundFXManager.instance.PlaySoundFXCLip(correctSFX, gameObject.transform, 1.0f);
             rC.gotIngredient(ingredientNum, correct);
             ingredientNum++;
         }
-        else if(Input.anyKeyDown)
+        else if((Input.anyKeyDown && !Input.GetKeyDown(KeyCode.P)) && (cdTimer>cooldown))
         {
+            
+            cdTimer = 0.0f;
             wrong.gameObject.SetActive(true);
+            makeAndThrow();
             SoundFXManager.instance.PlaySoundFXCLip(wrongSFX, gameObject.transform, 1.0f);
         }
         if(ingredientNum == currentSandwhich.Count)
@@ -86,5 +91,19 @@ public class RecipeHolder : MonoBehaviour
 
         orders.Clear();
         recipeDone = true;
+    }
+
+    private void makeAndThrow()
+    {
+        for(int i = 0;i<rC.validIngreds.Count;i++)
+        {
+            if (Input.GetKeyDown(rC.validIngreds[i].getKeyCode()))
+            {
+                rC.validIngreds[i].makeIngredient();
+                GameObject temp = fSandwhich.transform.GetChild(fSandwhich.transform.childCount - 1).gameObject;
+                temp.GetComponent<Rigidbody>().AddForce(Vector3.right *50,ForceMode.Impulse);
+                Destroy(temp, 1.0f);
+            }
+        }
     }
 }

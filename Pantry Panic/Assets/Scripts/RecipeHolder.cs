@@ -56,7 +56,7 @@ public class RecipeHolder : MonoBehaviour
         if (Input.GetKeyDown(currentSandwhich[ingredientNum].getKeyCode()) && (cdTimer > cooldown))
         {
             currentSandwhich[ingredientNum].makeIngredient();
-            //SoundFXManager.instance.PlaySoundFXCLip(correctSFX, gameObject.transform, 1.0f);
+            SoundFXManager.instance.PlaySoundFXCLip(correctSFX, gameObject.transform, 1.0f);
             rC.gotIngredient(ingredientNum, correct);
             ingredientNum++;
         }

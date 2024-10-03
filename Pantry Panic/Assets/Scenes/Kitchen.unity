@@ -2544,7 +2544,7 @@ MonoBehaviour:
   correct: {fileID: 2800000, guid: 2866f5439e60daa4cbdac55e2c0ad9ca, type: 3}
   fSandwhich: {fileID: 1411537555}
   wrong: {fileID: 1459111098}
-  correctSFX: {fileID: 0}
+  correctSFX: {fileID: 8300000, guid: 4ac8ce517e9b6d64ea06fae7e5ac78ca, type: 3}
   wrongSFX: {fileID: 8300000, guid: 7ceb4d8db5764e44f88a3b3bf39376ad, type: 3}
   cooldown: 1
 --- !u!1 &2070290734

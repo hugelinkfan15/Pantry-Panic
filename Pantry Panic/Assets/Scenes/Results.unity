@@ -683,7 +683,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "You have made <> sandwiches!\n\nWant to make a real difference?\nTake
     Action and Volunteer \nat a Local Food Pantry near you!\n\nScan this QR code
-    below to lear more:"
+    below to learn more:"
 --- !u!222 &1208568154
 CanvasRenderer:
   m_ObjectHideFlags: 0

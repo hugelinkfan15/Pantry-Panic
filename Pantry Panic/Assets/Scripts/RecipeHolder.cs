@@ -31,6 +31,8 @@ public class RecipeHolder : MonoBehaviour
     public float cooldown;
     private float cdTimer;
 
+    private SandwhichTracker sT;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,7 @@ public class RecipeHolder : MonoBehaviour
         recipeDone = true;
         currentSandwhich = new List<Ingredient>();
         finishedSandwhich = new List<GameObject>();
+        sT = new SandwhichTracker();
     }
 
     // Update is called once per frame
@@ -89,6 +92,7 @@ public class RecipeHolder : MonoBehaviour
             Destroy(fSandwhich.transform.GetChild(i).gameObject);
         }
 
+        sT.made();
         orders.Clear();
         recipeDone = true;
     }

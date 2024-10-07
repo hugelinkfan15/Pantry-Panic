@@ -14,7 +14,7 @@ public class PauseMenu : MonoBehaviour
         menu.SetActive(false);
         isPaused = false;
         Time.timeScale = 1;
-        //AudioListener.pause = false;
+        AudioListener.pause = false;
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class PauseMenu : MonoBehaviour
     {
         menu.SetActive(false);
         Time.timeScale = 1;
-        //AudioListener.pause = false;
+        AudioListener.pause = false;
         isPaused = false;
     }
 
@@ -52,7 +52,7 @@ public class PauseMenu : MonoBehaviour
     {
         menu.SetActive(true);
         Time.timeScale = 0;
-        //AudioListener.pause = true;
+        AudioListener.pause = true;
         isPaused = true;
     }
 }

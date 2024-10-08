@@ -761,8 +761,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "You have made     sandwiches!  \n\nWant to make a real difference?\nTake
     Action and Volunteer \nat a Local Food Pantry near you!\n\nScan this QR code
-    below to learn more:\nCredits:\nDuncan Barner\nKayden Miller\nJohn Chirayil\nPress
-    R to play again!\nPress T to view tutorial again!"
+    below to learn more:\nCredits:\nDuncan Barner, Kayden Miller,\nJohn Chirayil,
+    Alex Negovetich\nPress R to play again!\nPress T to view tutorial again!"
 --- !u!222 &1208568154
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 public class SwitchScene : MonoBehaviour
 {
-    public SceneReference scene ;
+    public SceneReference scene;
 
     public void switchScene()
     {

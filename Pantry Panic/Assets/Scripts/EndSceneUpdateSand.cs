@@ -7,16 +7,17 @@ public class EndSceneUpdateSand : MonoBehaviour
 {
     public Text counter;
 
-    private SandwhichTracker sT;
+    public SandwichTracker sT;
+
     // Start is called before the first frame update
     void Start()
     {
-        sT = gameObject.GetComponent<SandwhichTracker>();
+        counter.text = sT.sandwhichsMade.ToString();
+        sT.Clear();
     }
 
     // Update is called once per frame
     void Update()
     {
-        counter.text = sT.getSandwhiches().ToString();
     }
 }

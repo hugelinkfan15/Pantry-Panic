@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19a9b35f11afcef4db688bebad36a40d, type: 3}
-  m_Name: MenuSettings
+  m_Script: {fileID: 11500000, guid: 2e39f192bb9b9b540b3c5fd69541e4ee, type: 3}
+  m_Name: SandwhichesMade
   m_EditorClassIdentifier: 
-  masterVolume: 1
-  sFXVolume: 1
-  musicVolume: 1
+  sandwhichsMade: 0

@@ -3,18 +3,19 @@ using UnityEngine.SceneManagement; // For scene management
 
 public class RestartGame : MonoBehaviour
 {
+
+    public SceneReference tutorial;
+    public SceneReference kitchen;
     void Update()
     {
         // Check if the player presses the "R" key
         if (Input.GetKeyDown(KeyCode.R))
         {
-            RestartGameFunction();
+            SceneManager.LoadScene(kitchen);
         }
-    }
-
-    void RestartGameFunction()
-    {
-        // Load the tutorial scene (build index 0)
-        SceneManager.LoadScene(0);
+        if(Input.GetKeyDown(KeyCode.T))
+        {
+            SceneManager.LoadScene(tutorial);
+        }
     }
 }

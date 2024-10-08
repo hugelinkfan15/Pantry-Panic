@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -540,7 +540,6 @@ GameObject:
   - component: {fileID: 331959459}
   - component: {fileID: 331959458}
   - component: {fileID: 331959457}
-  - component: {fileID: 331959460}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Recipe Controller
@@ -596,21 +595,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &331959460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 331959456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ee9c9703b76f4b42a4ec40b76c1afb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scene:
-    sceneAsset: {fileID: 102900000, guid: 6a3e3c7e30d70dd4889f32686cab17f7, type: 3}
-    scenePath: Assets/Scenes/Results.unity
 --- !u!1001 &350240173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1877,6 +1861,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2018076813}
+  - {fileID: 1628264605}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2200,6 +2185,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459111095}
   m_CullTransparentMesh: 1
+--- !u!1 &1628264604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1628264605}
+  - component: {fileID: 1628264606}
+  m_Layer: 0
+  m_Name: SceneChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1628264605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628264604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982119210}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1628264606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628264604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f326838d44a298b41968f3d51b221426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 721878041}
+  scene:
+    sceneAsset: {fileID: 102900000, guid: 6a3e3c7e30d70dd4889f32686cab17f7, type: 3}
+    scenePath: Assets/Scenes/Results.unity
 --- !u!1001 &1655304733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2341,7 +2373,9 @@ MonoBehaviour:
     Tomato
     - T
 
-    Onion- O'
+    Onion- O
+
+    Pause - P'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2350,8 +2384,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294835194
-  m_fontColor: {r: 0.9803922, g: 0.9843138, b: 0.9921569, a: 1}
+    rgba: 4279028737
+  m_fontColor: {r: 0.003782494, g: 0.8018868, b: 0.04734415, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2677,7 +2711,6 @@ GameObject:
   - component: {fileID: 2018076813}
   - component: {fileID: 2018076812}
   - component: {fileID: 2018076814}
-  - component: {fileID: 2018076815}
   m_Layer: 0
   m_Name: RecipeMaker
   m_TagString: Recipe
@@ -2750,19 +2783,8 @@ MonoBehaviour:
   wrong: {fileID: 1459111098}
   correctSFX: {fileID: 8300000, guid: 4ac8ce517e9b6d64ea06fae7e5ac78ca, type: 3}
   wrongSFX: {fileID: 8300000, guid: 7ceb4d8db5764e44f88a3b3bf39376ad, type: 3}
+  sT: {fileID: 11400000, guid: 9ca49006694a33d45be18ea36f0b82db, type: 2}
   cooldown: 1
---- !u!114 &2018076815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018076811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7013c76217f4a0a4bae2f04db9cd5cd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2070290734
 GameObject:
   m_ObjectHideFlags: 0

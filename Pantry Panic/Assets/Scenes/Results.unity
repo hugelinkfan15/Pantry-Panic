@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -166,6 +166,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb93f1223e1f7b429adc47213e6d29c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorial:
+    sceneAsset: {fileID: 102900000, guid: 72f68b09136de4144ab561ef461835ab, type: 3}
+    scenePath: Assets/Scenes/Tutorial.unity
+  kitchen:
+    sceneAsset: {fileID: 102900000, guid: 9fc0d4010bbf28b4594072e72b8655ab, type: 3}
+    scenePath: Assets/Scenes/Kitchen.unity
 --- !u!1 &227337132
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,6 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counter: {fileID: 1724615578}
+  sT: {fileID: 11400000, guid: 9ca49006694a33d45be18ea36f0b82db, type: 2}
 --- !u!114 &881111815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,7 +723,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: -53.84549}
+  m_AnchoredPosition: {x: -119.52, y: -37.869}
   m_SizeDelta: {x: 881.1429, y: 525.738}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1208568153
@@ -755,7 +762,7 @@ MonoBehaviour:
   m_Text: "You have made     sandwiches!  \n\nWant to make a real difference?\nTake
     Action and Volunteer \nat a Local Food Pantry near you!\n\nScan this QR code
     below to learn more:\nCredits:\nDuncan Barner\nKayden Miller\nJohn Chirayil\nPress
-    R to play again!"
+    R to play again!\nPress T to view tutorial again!"
 --- !u!222 &1208568154
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -798,7 +805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.6, y: 189.52}
+  m_AnchoredPosition: {x: -111, y: 203}
   m_SizeDelta: {x: 79.1536, y: 70.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1724615578

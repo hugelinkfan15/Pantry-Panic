@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class SandwhichTracker : MonoBehaviour
 {
-    private static int sandwhiches = 0;
+    private static int sandwhiches;
 
     public void made()
     {
         sandwhiches++;
+        Debug.Log("Sandwhich");
+        Debug.Log(sandwhiches);
+
     }
 
     public int getSandwhiches()

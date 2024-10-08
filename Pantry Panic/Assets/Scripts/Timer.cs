@@ -21,6 +21,8 @@ public class Timer : MonoBehaviour
     public TimerFormats format;
     private Dictionary<TimerFormats,string> timeFormats = new Dictionary<TimerFormats,string>();
 
+    public bool timerDone;
+
     private long minutes = 0;
     private  float seconds = 0;
     
@@ -30,6 +32,8 @@ public class Timer : MonoBehaviour
         timeFormats.Add(TimerFormats.TenthDecimal, "00.0");
         timeFormats.Add(TimerFormats.HunderethDecimal, "00.00");
         timeFormats.Add(TimerFormats.ThousandthDecimal, "00.000");
+
+        timerDone = false;
     }
 
     // Update is called once per frame
@@ -51,6 +55,10 @@ public class Timer : MonoBehaviour
 
             SetTimeText();
 
+        }
+        if( currentTime <= 0)
+        {
+            
         }
     }
 

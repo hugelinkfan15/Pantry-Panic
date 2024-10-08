@@ -9,7 +9,7 @@ public class SwitchScene : MonoBehaviour
 {
     public SceneReference scene ;
 
-  public void switchScene()
+    public void switchScene()
     {
         SceneManager.LoadScene(scene);
        

@@ -3509,6 +3509,16 @@ MonoBehaviour:
   - {fileID: 420062028}
   - {fileID: 1972239009}
   - {fileID: 538292858}
+  keySlots:
+  - {fileID: 775693990}
+  - {fileID: 1095208513}
+  - {fileID: 898868006}
+  - {fileID: 1559354380}
+  - {fileID: 634081474}
+  - {fileID: 1548453041}
+  - {fileID: 295760167}
+  - {fileID: 1249164092}
+  - {fileID: 1517851474}
 --- !u!4 &2018076813
 Transform:
   m_ObjectHideFlags: 0
@@ -3541,8 +3551,8 @@ MonoBehaviour:
   gameOver: 1
   recipeDone: 0
   correct: {fileID: 2800000, guid: 2866f5439e60daa4cbdac55e2c0ad9ca, type: 3}
-  fSandwhich: {fileID: 1411537555}
   wrong: {fileID: 1459111098}
+  fSandwhich: {fileID: 1411537555}
   correctSFX: {fileID: 8300000, guid: 4ac8ce517e9b6d64ea06fae7e5ac78ca, type: 3}
   wrongSFX: {fileID: 8300000, guid: 7ceb4d8db5764e44f88a3b3bf39376ad, type: 3}
   sT: {fileID: 11400000, guid: 9ca49006694a33d45be18ea36f0b82db, type: 2}

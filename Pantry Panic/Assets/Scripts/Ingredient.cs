@@ -34,10 +34,19 @@ public class Ingredient : MonoBehaviour
         { 'Y', KeyCode.Y },
         { 'Z', KeyCode.Z } };
 
-    public char assigned;
+    [Header("")]
     public static Vector3 sandwhichPoint;
     public RecipeHolder holder;
+
+    [Header("")]
+    public char assigned;
+
+    [Header("Display Pictures")]
     public Texture2D uiPic;
+    public Texture2D activeKeyPic;
+    public Texture2D unactiveKeyPic;
+
+    [Header("Objects")]
     public GameObject unboundFood;
     public GameObject sandwhich;
 

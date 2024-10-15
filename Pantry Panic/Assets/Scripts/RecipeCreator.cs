@@ -18,6 +18,9 @@ public class RecipeCreator : MonoBehaviour
     public List<RawImage> recipeSlots;
     public List<RawImage> keySlots;
 
+    public Texture2D correct;
+    public Texture2D pHKey;
+
     /*private Dictionary<string,int> ingredientRank = new Dictionary<string, int>
     {
         {"Bread",1 },
@@ -30,7 +33,11 @@ public class RecipeCreator : MonoBehaviour
     {
         foreach(var pic in recipeSlots)
         {
-            pic.texture = null;
+            pic.texture = correct;
+        }
+        foreach (var pic in keySlots)
+        {
+            pic.texture = pHKey;
         }
     }
     /// <summary>
@@ -61,11 +68,11 @@ public class RecipeCreator : MonoBehaviour
     {
         foreach (var pic in recipeSlots)
         {
-            pic.texture = null;
+            pic.texture = correct;
         }
         foreach (var pic in keySlots)
         {
-            pic.texture = null;
+            pic.texture = pHKey;
         }
         for (int i = 0; i<recipe.Count;i++)
         {

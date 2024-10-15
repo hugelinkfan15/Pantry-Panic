@@ -125,8 +125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3953938038a30134cbaf91d775284da0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assigned: 84
   holder: {fileID: 0}
+  assigned: 84
   uiPic: {fileID: 2800000, guid: 6297ed851fdddf94195ed601e39c52f3, type: 3}
-  recipeSlot: {fileID: 0}
+  activeKeyPic: {fileID: 2800000, guid: 7d6592c5fead7f941ac6e6e3b9c1ab6a, type: 3}
+  unactiveKeyPic: {fileID: 2800000, guid: 048ee3f5244edac4e85109b5e0959bfa, type: 3}
   unboundFood: {fileID: 252318287992726554, guid: c606fdaa0ec2cc44ba10ff178c2b88da, type: 3}
+  sandwhich: {fileID: 0}

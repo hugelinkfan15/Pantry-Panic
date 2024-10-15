@@ -6,21 +6,25 @@ using UnityEngine.UI;
 
 public class RecipeHolder : MonoBehaviour
 {
+    [Header("Need Scripts")]
     public RecipeCreator rC;
     public List< List<Ingredient>> orders;
-    
+
+    [Header("Ints")]
     public int maxOrders;
-    
+
+    [Header("Booleans")]
     public bool gameStart;
     public bool gameOver;
     public bool recipeDone;
 
+    [Header("")]
     public Texture2D correct;
-    
-    public GameObject fSandwhich;
-
     public RawImage wrong;
 
+    public GameObject fSandwhich;
+
+    [Header("SFX")]
     public AudioClip correctSFX;
     public AudioClip wrongSFX;
 
@@ -60,7 +64,7 @@ public class RecipeHolder : MonoBehaviour
         {
             currentSandwhich[ingredientNum].makeIngredient();
             SoundFXManager.instance.PlaySoundFXCLip(correctSFX, gameObject.transform, 1.0f);
-            rC.gotIngredient(ingredientNum, correct);
+            rC.gotIngredient(ingredientNum, correct, currentSandwhich[ingredientNum].unactiveKeyPic);
             ingredientNum++;
         }
         else if((Input.anyKeyDown && !Input.GetKeyDown(KeyCode.P)) && (cdTimer>cooldown) && !PauseMenu.isPaused)

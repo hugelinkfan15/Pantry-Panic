@@ -14,7 +14,9 @@ public class RecipeCreator : MonoBehaviour
     /// FIRST INGREDIENT MUST BE BREAD!!!
     /// </summary>
     public List<Ingredient> validIngreds;
+    [Header("UI Panel Slots")]
     public List<RawImage> recipeSlots;
+    public List<RawImage> keySlots;
 
     /*private Dictionary<string,int> ingredientRank = new Dictionary<string, int>
     {
@@ -61,9 +63,17 @@ public class RecipeCreator : MonoBehaviour
         {
             pic.texture = null;
         }
+        foreach (var pic in keySlots)
+        {
+            pic.texture = null;
+        }
         for (int i = 0; i<recipe.Count;i++)
         {
             recipeSlots[i].texture = recipe[i].uiPic;
+        }
+        for (int i = 0; i < recipe.Count; i++)
+        {
+            keySlots[i].texture = recipe[i].activeKeyPic;
         }
     }
 
@@ -73,9 +83,10 @@ public class RecipeCreator : MonoBehaviour
     /// </summary>
     /// <param name="i"> spot in the List </param>
     /// <param name="pic">Texture to change the RawImage to</param>
-    public void gotIngredient(int i, Texture2D pic)
+    public void gotIngredient(int i, Texture2D uIPic, Texture2D keyPic)
     {
-        recipeSlots[i].texture = pic;
+        recipeSlots[i].texture = uIPic;
+        keySlots[i].texture=keyPic;
     }
 
     //IN PROGRESS!!!

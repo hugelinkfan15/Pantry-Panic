@@ -378,34 +378,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
       propertyPath: sentences.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: Hi, I'm Gene. I just wanted to come by and say, "Great sandwiches, kid!"
+      value: Hi, sweetheart. My name is Sheila. Me and my kids have been coming here
+        for a couple of weeks. The sandwiches that you've made today not only fed
+        me, but fed my kids as well.
       objectReference: {fileID: 0}
     - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
       propertyPath: sentences.Array.data[1]
-      value: I've been scraping by for the better part of 16 years now. Lost my job
-        at the plant and never quite got my life back together after that. This place
-        has been something of a home to me.
+      value: As a single mother and a widow, it's been hard for me to adjust to taking
+        care of the kids full time. I barely have any time to work, and by the time
+        I get home, I'm so tired that making food is difficult.
       objectReference: {fileID: 0}
     - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
       propertyPath: sentences.Array.data[2]
-      value: Unfortunately, every year, I've noticed fewer and fewer volunteers like
-        yourself coming by to help out. It's gotten pretty bad these past few years,
-        so bad that the kitchen staff often can't keep up with all of us needy folk
-        trying to get a meal!
+      value: 'These kids see what you''re doing here and they look up to you. You''re
+        helping people you don''t even know and you''re doing it just out of the
+        kindness of your heart. We appreciate you for what you''re doing. '
       objectReference: {fileID: 0}
     - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
       propertyPath: sentences.Array.data[3]
-      value: Every meal that you prepare keeps a person going for another day or
-        so. It might not seem like much, kid, but you're saving lives whether you
-        know it or not.
+      value: My kids keep telling me that they want to volunteer when they're older
+        because of you! Thank you. The difference you're making here is so much bigger
+        than I could ever describe. You're a good influence and I'm so happy that
+        you decided to help out and inspire these children to do good in the world.
       objectReference: {fileID: 0}
     - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
       propertyPath: sentences.Array.data[4]
-      value: Thanks again, friend. You're doing great work.
+      value: (Press Continue to move on to Day 4! This will start your timer, so
+        be ready!)
       objectReference: {fileID: 0}
     - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
       propertyPath: sentences.Array.data[5]

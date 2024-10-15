@@ -373,11 +373,41 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: nextSceneName
+      value: Kitchen
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: Hey, I'm Esmeralda. I've been coming here for food for a few weeks now...
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: I often don't get to eat because the kitchen gets so overwhelmed. It's
+        so great of you to volunteer and help feed people like us; people who have
+        just fallen on hard times and are looking for a nice meal.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
       propertyPath: sentences.Array.data[2]
-      value: 'For example, if you see a sandwich order that is as follows: Bread,
-        Cheese, Ham, Tomato, Onion, Bread, you will press: BCHTOB, and that will
-        assemble your sandiwch! The buttons match the first letter of the ingredient,
-        so it''s really quite simple!'
+      value: I'm sure this goes without saying, but you're making a huge difference
+        in our lives by doing this.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: sentences.Array.data[3]
+      value: 'Thank you so much. I''ll be able to get by for another day because
+        of you. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028875602871171525, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: sentences.Array.data[4]
+      value: (Press Continue to move on to Day 2 and make more sandwiches. This will
+        start the timer again, so be ready!)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028875602995787449, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: m_Text
+      value: Esmeralda
       objectReference: {fileID: 0}
     - target: {fileID: 9028875603853102528, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
       propertyPath: m_Pivot.x
@@ -471,5 +501,33 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 521749883}
+    - target: {fileID: 9028875604562423741, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: m_Name
+      value: Esmeralda
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028875604562423742, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028875604562423742, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028875604562423742, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028875604562423742, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028875604562423742, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028875604562423743, guid: 59f3df2c27593234686db9c314cc1790, type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 197964fc76b9200459b3386d9aa27d0f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59f3df2c27593234686db9c314cc1790, type: 3}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -724,7 +724,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -119.52, y: -37.869}
+  m_AnchoredPosition: {x: -120, y: -37.869}
   m_SizeDelta: {x: 881.1429, y: 525.738}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1208568153
@@ -749,7 +749,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -761,9 +761,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "You have made     sandwiches!  \n\nWant to make a real difference?\nTake
-    Action and Volunteer \nat a Local Food Pantry near you!\n\nScan this QR code
-    below to learn more:\nCredits:\nDuncan Barner, Kayden Miller,\nJohn Chirayil,
-    Alex Negovetich\nPress R to play again!\nPress T to view tutorial again!"
+    Action and Volunteer \nat a Local Food Pantry near you!\n\nScan the QR code on
+    the right to learn more:\n\nCredits:\nDuncan Barner, Kayden Miller,\nJohn Chirayil,
+    Alex Negovetich\n\nPress R to play again!\nPress T to view tutorial again!"
 --- !u!222 &1208568154
 CanvasRenderer:
   m_ObjectHideFlags: 0

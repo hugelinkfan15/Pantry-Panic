@@ -2997,10 +2997,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f326838d44a298b41968f3d51b221426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 721878041}
-  scene:
-    sceneAsset: {fileID: 102900000, guid: 6a3e3c7e30d70dd4889f32686cab17f7, type: 3}
+  scenes:
+  - sceneAsset: {fileID: 102900000, guid: cc259eb55b5a92d4290ec9c6996bc104, type: 3}
+    scenePath: Assets/Scenes/EndLevelOne.unity
+  - sceneAsset: {fileID: 102900000, guid: 5c935d2697ae21c45987b2e14df3b635, type: 3}
+    scenePath: Assets/Scenes/EndLevelTwo.unity
+  - sceneAsset: {fileID: 102900000, guid: 6425f730622c6224784a3221080a4376, type: 3}
+    scenePath: Assets/Scenes/EndLevelThree.unity
+  - sceneAsset: {fileID: 102900000, guid: 6a3e3c7e30d70dd4889f32686cab17f7, type: 3}
     scenePath: Assets/Scenes/Results.unity
+  timer: {fileID: 721878041}
+  tracker: {fileID: 11400000, guid: 973243ee7b697f840ab27e652fa54b3f, type: 2}
 --- !u!1001 &1655304733
 PrefabInstance:
   m_ObjectHideFlags: 0

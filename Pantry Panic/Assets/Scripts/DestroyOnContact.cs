@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class DestroyOnContact : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Destroy(collision.gameObject);
     }
 }

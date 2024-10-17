@@ -20,7 +20,7 @@ public class ItemDropper : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(0.1f,0.3f));
         while(!stop)
         {
-            Instantiate(Ingredients[Random.Range(0, Ingredients.Count)], new Vector3(Random.Range(-3f, 3f), spawnHeight, 0), new Quaternion(Random.Range(0f,1f),Random.Range(0f,1f),Random.Range(0f,1f),Random.Range(0f,1f)));
+            Instantiate(Ingredients[Random.Range(0, Ingredients.Count)], new Vector3(Random.Range(-3.5f, 3.5f), spawnHeight, 0), new Quaternion(Random.Range(0f,1f),Random.Range(0f,1f),Random.Range(0f,1f),Random.Range(0f,1f)));
             yield return new WaitForSeconds(Random.Range(0.1f, 0.3f));
         }
     }

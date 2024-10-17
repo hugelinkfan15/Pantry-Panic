@@ -6,14 +6,21 @@ using UnityEngine;
 public class SandwichTracker : ScriptableObject
 {
     public int sandwhichsMade;
+    public int totalSandwiches;
 
     public void made()
     {
         sandwhichsMade++;
+        totalSandwiches++;
     }
 
-    public void Clear()
+    public void ClearDaily()
     {
         sandwhichsMade = 0;
+    }
+
+    public void ClearTotal()
+    {
+        totalSandwiches = 0;
     }
 }

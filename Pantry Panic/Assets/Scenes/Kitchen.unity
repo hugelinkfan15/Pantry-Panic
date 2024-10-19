@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3004,6 +3004,14 @@ MonoBehaviour:
     scenePath: Assets/Scenes/EndLevelTwo.unity
   - sceneAsset: {fileID: 102900000, guid: 6425f730622c6224784a3221080a4376, type: 3}
     scenePath: Assets/Scenes/EndLevelThree.unity
+  - sceneAsset: {fileID: 102900000, guid: e9f19bf07955dd9499697b69bee03fec, type: 3}
+    scenePath: Assets/Scenes/EndLevelFour.unity
+  - sceneAsset: {fileID: 102900000, guid: 6537d7e5062183b4bb2417080b971daa, type: 3}
+    scenePath: Assets/Scenes/EndLevelFive.unity
+  - sceneAsset: {fileID: 102900000, guid: 0a708db47b5f5ea48bc0082a3643f6da, type: 3}
+    scenePath: Assets/Scenes/EndLevelSix.unity
+  - sceneAsset: {fileID: 102900000, guid: 493c2be84007907458a5b98665c701ce, type: 3}
+    scenePath: Assets/Scenes/EndLevelSeven.unity
   - sceneAsset: {fileID: 102900000, guid: 6a3e3c7e30d70dd4889f32686cab17f7, type: 3}
     scenePath: Assets/Scenes/Results.unity
   timer: {fileID: 721878041}

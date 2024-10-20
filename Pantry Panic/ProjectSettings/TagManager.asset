@@ -11,7 +11,7 @@ TagManager:
   - Topping
   - Recipe Controller
   - Recipe
-  - SweetSpot
+  - Slider
   layers:
   - Default
   - TransparentFX

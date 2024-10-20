@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365af87bf4fb77d4ca20e818fc92d740, type: 3}
   m_Name: SceneTracker
   m_EditorClassIdentifier: 
-  index: 2
+  index: 0
